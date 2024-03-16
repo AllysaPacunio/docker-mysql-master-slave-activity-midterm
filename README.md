@@ -36,7 +36,7 @@ cd ..
 node index.js
 ```
 
-###Click Send Request at the request.rest file
+##Click Send Request at the request.rest file
 
 ## Troubleshooting
 
