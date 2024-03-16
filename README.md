@@ -11,20 +11,32 @@ and after starting setup replication. See commands inside ./build.sh.
 #### Create 2 MySQL containers with master-slave row-based replication 
 
 ```
+chmod +x build.sh
+```
+
+```
 ./build.sh
 ```
-
-#### Make changes to master
-
 ```
-docker exec mysql_master sh -c "export MYSQL_PWD=111; mysql -u root mydb -e 'insert into code values (100), (200)'"
+npm install mysql
+```
+```
+cd example_app
+```
+```
+cd REST
+```
+```
+code request.rest
+```
+```
+cd ..
+```
+```
+node index.js
 ```
 
-#### Read changes from slave
-
-```
-docker exec mysql_slave sh -c "export MYSQL_PWD=111; mysql -u root mydb -e 'select * from code \G'"
-```
+###Click Send Request at the request.rest file
 
 ## Troubleshooting
 
