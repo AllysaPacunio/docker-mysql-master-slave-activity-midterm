@@ -3,7 +3,6 @@ import { addAction, getAction, updateAction, deleteAction } from './controllers/
 import { getCartItem, addCartItem, updateCartItem, deleteCartItem } from './controllers/cart_item.controller.js'
 import { addCheckout } from './controllers/cart.controller.js'
 import { getHistory } from './controllers/orders.controller.js'
-import { authenticate } from './controllers/login.controller.js'
 
 export function homepageRoute(request, response) {
   response.setHeader('Content-Type', 'application/json')
